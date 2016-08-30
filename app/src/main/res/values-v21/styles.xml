@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:colorPrimary">@color/light_orange</item>
+        <!--item name="android:textColorPrimary">@color/abc_background_cache_hint_selector_material_dark</item-->
+        <item name="android:colorPrimaryDark">@color/dark_orange</item>
+        <!--item name="android:colorAccent">@color/abc_background_cache_hint_selector_material_dark</item-->
+        <item name="android:windowBackground">@color/white</item>
+        <!--item name="android:navigationBarColor">@color/dark_orange</item-->
+        <item name="android:typeface">monospace</item>
+
+
+       <item name="android:actionBarStyle">@style/Action_Bar</item>
+
+
+        <!-- enable window content transitions -->
+        <item name="android:windowContentTransitions">true</item>
+
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@android:transition/slide_right</item>
+        <item name="android:windowExitTransition">@android:transition/slide_left</item>
+    </style>
+
+
+
+
+
+    <!-- A C T I O N   B A R -->
+    <style name="Action_Bar">
+        <item name="android:background">@color/dark_orange</item>
+    </style>
+
+
+
+
+
+
+</resources>

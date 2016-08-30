@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.parsler.pycman.PaymentActivity">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+
+        <!-- A C T I V I T Y   C O N T E N T -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+
+            <!-- P A Y M E N T   E S T I M A T E -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Estimate amount = Inr 100 /-"
+                android:padding="10dp"
+                android:gravity="center"/>
+
+
+
+            <!-- P A Y M E N T   D E T A I L S -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- P A Y M E N T   H E A D E R -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select a payment option"
+                    android:padding="15dp"
+                    android:gravity="center"/>
+
+
+                <!-- I T E M S   L I S T -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:weightSum="2">
+
+
+                    <!-- G R I D   I T E M -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_placeholder"
+                            android:padding="15dp"
+                            android:src="@drawable/cod_default"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:textSize="12dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:text="Cash"/>
+
+                    </LinearLayout>
+
+
+                    <!-- G R I D   I T E M -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <ImageView
+                            android:layout_width="85dp"
+                            android:layout_height="85dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/image_placeholder"
+                            android:padding="15dp"
+                            android:src="@drawable/paytm_default"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:textSize="12dp"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:text="PayTM"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+    <!-- N E X T   S T E P   B U T T O N -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Confirm and Pay"
+        android:background="@drawable/ripple_animation"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:elevation="5dp"
+        android:onClick="getOrderConfirmation"
+        android:padding="25dp"/>
+
+</RelativeLayout>
+
+

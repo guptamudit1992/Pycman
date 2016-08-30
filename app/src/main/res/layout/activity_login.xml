@@ -1,0 +1,42 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:layout_margin="30dp"
+    android:focusableInTouchMode="true">
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_above="@+id/login_proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile no (10 digit)"
+            android:inputType="phone"
+            android:elevation="5dp"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    
+    <Button
+        android:id="@+id/login_proceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Proceed"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/ripple_animation"
+        android:elevation="5dp"
+        android:onClick="gettingStarted"
+        android:layout_marginTop="40dp"/>
+
+
+</RelativeLayout>

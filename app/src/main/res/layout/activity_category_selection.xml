@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.parsler.pycman.CategorySelectionActivity">
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="60dp">
+
+        <!-- T A B   C O N T E N T -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="4"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <!-- I T E M S   L I S T -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+
+                <!-- G R I D   I T E M -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/image_placeholder"
+                        android:padding="15dp"
+                        android:src="@drawable/documents_default"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:text="Documents"/>
+
+                </LinearLayout>
+
+
+                <!-- G R I D   I T E M -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/image_placeholder"
+                        android:padding="15dp"
+                        android:src="@drawable/food_default"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:text="Food"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- I T E M S   L I S T -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+
+                <!-- G R I D   I T E M -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/image_placeholder"
+                        android:padding="15dp"
+                        android:src="@drawable/clothes_default"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:text="Clothes"/>
+
+                </LinearLayout>
+
+
+                <!-- G R I D   I T E M -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/image_placeholder"
+                        android:padding="15dp"
+                        android:src="@drawable/electronics_default"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:text="Electronics"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+            <!-- I T E M S   L I S T -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:weightSum="2">
+
+
+                <!-- G R I D   I T E M -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/image_placeholder"
+                        android:padding="15dp"
+                        android:src="@drawable/grooming_default"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:text="Grooming"/>
+
+                </LinearLayout>
+
+
+                <!-- G R I D   I T E M -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/image_placeholder"
+                        android:padding="15dp"
+                        android:src="@drawable/food_default"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:text="Food"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!-- I T E M S   L I S T -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <!-- G R I D   I T E M -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/image_placeholder"
+                        android:padding="15dp"
+                        android:src="@drawable/misc_default"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textSize="12dp"
+                        android:layout_gravity="center"
+                        android:textColor="@color/black"
+                        android:text="Miscellaneous"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <!-- C L I C K   P H O T O   B U T T O N -->
+            <!--Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="15dp"
+                android:layout_margin="20dp"
+                android:textSize="12dp"
+                android:textColor="@color/dark_green"
+                android:background="@drawable/hollow_button"
+                android:text="Click a Photo"/-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+    <!-- N E X T   S T E P   B U T T O N -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Proceed"
+        android:background="@drawable/ripple_animation"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:elevation="5dp"
+        android:onClick="getPaymentActivity"
+        android:padding="25dp"/>
+
+
+</RelativeLayout>

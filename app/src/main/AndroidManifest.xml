@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.parsler.pycman" > <!-- SDK Version Management -->
+    <uses-sdk
+        android:maxSdkVersion="23"
+        android:minSdkVersion="21"
+        android:targetSdkVersion="22" />
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Splash Screen Activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- Getting Started Activity -->
+        <activity
+            android:name=".GettingStartedActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- Main Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- SMS Broadcast Receiver -->
+        <receiver android:name=".Services.SMSListenerService" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".OrderSummaryActivity"
+            android:label="@string/title_activity_order_summary" >
+        </activity>
+        <activity
+            android:name=".OrderConfirmationActivity"
+            android:label="@string/title_activity_order_confirmation" >
+        </activity>
+        <activity
+            android:name=".PaytmPaymentGatewayAcitivity"
+            android:label="@string/title_activity_paytm_payment_gateway_acitivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <!-- Fabric Crashlytics Service -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="9b2d36bd02767db6a32091d22609a625cd47daf6" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".CategorySelectionActivity"
+            android:label="@string/title_activity_category_selection" >
+        </activity>
+        <activity
+            android:name=".PaymentActivity"
+            android:label="@string/title_activity_payment" >
+        </activity>
+        <activity
+            android:name=".OrderDetailActivity"
+            android:label="@string/title_activity_order_detail" >
+        </activity>
+        <activity
+            android:name=".TrackingActivity"
+            android:label="@string/title_activity_tracking" >
+        </activity>
+        <activity
+            android:name=".DetailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+    </application>
+
+</manifest>
